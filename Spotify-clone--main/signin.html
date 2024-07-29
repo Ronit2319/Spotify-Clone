@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In - Spotify</title>
+    <style>
+        body {
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    padding: 5px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.container {
+    background-color: #282828;
+    padding: 40px;
+    border-radius: 15%;
+    width: 400px; /* Adjusted width */
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #078b35;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0fc928;
+}
+
+.or-separator {
+    color: white;
+    margin: 10px 0;
+    padding-left: 50%;
+}
+
+a {
+    color: #1db954;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+        </div>
+    
+        <div class="container">
+            <form class="signin-form" onsubmit="return navigateToHome()">
+                <h1>Sign in to your Spotify account</h1>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Sign In</button>
+    
+                <div class="or-separator">
+                    <span>or</span>
+                </div>
+    
+                <button type="button">Sign In with Google</button>
+    
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </form>
+        </div>
+        <script  src="script.js"></script>
+</body>
+
+</html>

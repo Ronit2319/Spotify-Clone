@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+.sidebar-section{
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 23px;
+    margin-bottom: 25px;
+}
+.sidebar {
+        position: fixed;
+        background-color: #0f0f0f;
+        padding: 12px;
+        width: 350px;
+}
+
+.sidebar .logo img {
+    width: 130px;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li {
+    padding: 10px 0;
+}
+
+.sidebar .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active
+{
+    color: greenyellow;
+}
+
+.sidebar .navigation ul li a span {
+    padding-left: 10px;
+}
+.sidebar .policies ul li {
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #0f0f0f;
+    padding: 10px;
+}
+.navbar ul {
+    list-style: none;
+    display: grid;
+    padding-left: 700px;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-self: end; /* Align items to the end of the column */
+}
+
+.navbar ul li {
+    color: white;
+    font-size: 14px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active
+ {
+    color: greenyellow;
+    font-size: 15px;
+}
+
+
+.main-container {
+    margin-left: 360px; /* Set this to the width of your fixed sidebar */
+    margin-bottom: 180px;
+    padding-left: 20px;
+    display: grid;
+    margin-top: 110px;
+}
+
+.spotify-playlist {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.spotify-playlist h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 6px;
+    grid-auto-flow:column; /* Set grid flow to column for horizontal layout */
+}
+
+.spotify-playlist .list .item {
+    width: 200px;
+    overflow:hidden;
+}
+
+.spotify-playlist .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item .play {
+    position: relative;
+}
+
+.spotify-playlist .list .item .play span {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: rgb(24, 172, 11);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover .play span {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlist .list .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #dcd6d6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+
+.preview {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.preview p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+

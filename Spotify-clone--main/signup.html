@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up - Spotify</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .navbar {
+            background-color: #000;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .logo img {
+            max-height: 50px;
+        }
+
+        .container {
+            background-color: #282828;
+            padding: 50px;
+            border-radius: 10%;
+            width: 500px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .signin-form {
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        select {
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #078b35;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0fc928;
+        }
+
+        .or-separator {
+            color: white;
+            margin: 10px 0;
+            padding-left: 50%;
+        }
+
+        a {
+            color: #1db954;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="signin-form" onsubmit="return navigateToHome()">
+            <h1>Sign up to start Listening</h1>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Sign Up</button>
+            <div class="or-separator">
+                <span>or</span>
+            </div>
+
+            <button type="button">Sign up with Google</button>
+
+            <p>Already have an account? <a href="signin.html">Login here</a></p>
+        </form>
+    </div>
+    <script  src="script.js"></script>
+</body>
+
+</html>
